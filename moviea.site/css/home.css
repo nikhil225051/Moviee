@@ -1,0 +1,1080 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: transparent;
+  
+     background-color: rgb(40, 49, 61);
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+ 
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    width: 30%;
+    border:3px solid white;
+    border-radius: 50% ;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    
+}
+.nav-list{
+width: 50%;
+display: flex;
+align-items: center;
+}
+
+.nav-list li{
+    padding:20px 30px;
+    list-style: none;
+}
+
+.nav-list li a{
+text-decoration: none;
+color: white;
+cursor: pointer;
+}
+
+.nav-list li a:hover{
+   color: green;
+    }
+
+.rightNav{
+    position: relative;
+   top: 15px;
+   right: 15px;
+    width: 50%;
+    text-align: right;
+    
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../background.jpeg');
+   
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.btn{
+    border-color: #e0254b;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 5%;
+    
+    }
+    
+    .line{
+      width: 33px;
+      background-color: red;
+      height: 2px;
+      margin: 5px 3px;
+      
+    }
+  .text1{
+    
+    position: absolute;
+    margin-top: 400px;
+   display: flex;
+   flex-direction: row;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    
+}
+.heading {
+    position: absolute;
+    width: 100%;
+    display: flex;
+   
+}
+
+.heading video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover; 
+    z-index: -1; 
+}
+.padding{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    margin-top: 7%;
+    left: 20%;
+    border-radius: 10px;
+    display: flex;
+    gap: 1%;
+}
+.btn1{
+    width: 10%;
+    height: 95%;
+   font-size: 100%;
+   font-weight: 500;
+   color: white;
+   background-color: transparent;
+   border: none;
+   max-width: 50%;
+   cursor: pointer;
+}
+.btn2{
+    width: 10%;
+    height: 95%;
+   font-size: 100%;
+   font-weight: 500;
+   color: white;
+   background-color: transparent;
+   border: none;
+   max-width: 50%;
+   cursor: pointer;
+}
+.btn1:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+    border-radius: 5px;
+  
+}
+.btn2:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+    border-radius: 5px;
+  }
+.input{
+    position: relative;
+    left: 15%;
+    height: 80%;
+    width: 28%;
+    top: 4%;
+    border-radius: 5px;
+    background: transparent;
+    background-color: rgb(211, 235, 235);
+    border: 0.5px solid rgb(154, 212, 245);
+}
+.input:hover{
+    border: 0.5px solid rgb(156, 223, 238);
+}
+.search-btn{
+    position: relative;
+    left: 11.5%;
+    width: 4%;
+    height: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgb(15, 33, 110) 100%);
+
+    border: none;
+}
+.search-btn:hover{
+    background-color: blue;
+}
+
+.left{
+    position:absolute;
+    top: 630px;
+    left:4% ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.head{
+    font-size: 25px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    color: #536f86;
+}
+.child{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 1%;
+    color: #7A8B9D;
+    cursor: pointer;
+}
+.child:hover{
+    color: aquamarine;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(19, 26, 43);
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 700px;
+    height: 380px;
+    overflow-x: scroll;
+   scrollbar-width: none;
+   overflow-y: hidden;
+   border-radius: 10px;
+
+}
+
+.banner-section{
+    
+   max-width: 70%;
+    left: 0;
+    top: 0;
+}
+
+#image1{
+    width: 130%;
+    height: 100%;
+}
+
+.game-name{
+    position: relative;
+    max-height: 35px;
+    overflow-y: hidden;
+   left: 15.5%;
+   top: 3%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.game-image{
+    position: relative;
+    top: 15%;
+    left: -5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.game-image2{
+    position: relative;
+    top: 15%;
+    display: flex; 
+    flex-direction: column;
+    gap: 2%;
+   
+    left: -3%;
+}
+.price:hover{
+    background-color: black;
+    color: white;
+}
+
+.login-padding{
+    background-color: rgba(0, 0, 0, 0.2);
+position: absolute;
+    width: 60%;
+    height: 200px;
+    top: 155%;
+    left: 20%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow: hidden;
+
+
+}
+
+.btn-login:hover{
+    background-color: rgb(13, 26, 99);
+    color: white;
+}
+
+.category{
+    position: absolute;
+    top: 185%;
+    left: 20%;
+    color: white;
+}
+.category-image{
+
+   position: absolute;
+   top: 190%;
+   left: 20%;
+    width: 60%;
+    height: 214px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    border-radius: 5px;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+}
+.label{
+    background: transparent;
+}
+.label:hover{
+    
+        background: linear-gradient(rgba(0, 0, 0, 0), rgb(139, 0, 0) 100%);
+   
+}
+.label{
+    cursor: pointer;
+}
+.label:hover{
+  width: 24%;
+  height: 100%;
+  background-color: #06BFFF;
+  box-shadow: #06BFFF;
+  transition: 0.5em;
+}
+
+.browse-btn{
+    position: absolute;
+    top: 222%;
+    left: 20%;
+    width: 60%;
+   display: flex;
+   flex-direction: row;
+   gap: 1%;
+}
+
+.browse-btn1{
+    color: white;
+    border: none;
+    margin-top: 5%;
+    width: 300%;
+    height: 60px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);  cursor: pointer;
+    font-weight: 600;
+}
+.browse-btn1:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.new-padding{
+    width: 60%;
+    height: 30px;
+position: absolute;
+top: 247%;
+left: 20%;
+display: flex;
+flex-direction: row;
+gap: 3%;
+}
+.new-padding >button{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #4f94bc;
+
+}
+.new-padding >button:hover{
+color: white;    
+}
+
+.new-padding-main1{
+    position: absolute;
+    top: 251%;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(42, 71, 94, 1.0) 5%, rgba(42, 71, 94, 0.0) 70%);
+    background: linear-gradient(to bottom, rgba(42, 71, 94, 1.0) 5%, rgba(42, 71, 94, 0.0) 70%);    overflow: transparent;
+}
+.new-padding-main{
+    position: relative;
+    top: 1%;
+    left: 20%;
+    width: 55%;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+}
+.new-padding-text{
+   color: #c7d5e0;   
+   position: absolute;
+   left: 42%;
+   top: 4%;
+   font-size: 14px;
+   font-weight: 550;
+}
+.window-logo{
+    position: absolute;
+    left: 42%;
+    top: 35%;
+}
+.larger-text{
+    position: absolute;
+    left: 42%;
+    top: 75%;
+    font-size: 12px;
+    color: #384959;
+    max-height: 12px;
+    overflow: hidden;
+}
+
+.discount{
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    width: 8%;
+    height: 35%;
+    background-color: #4c6b22;
+color: #BEEE11;
+border: none;
+border-radius: 3px;
+font-weight: 550;
+}
+.discount_final_price{
+    color: #BEEE11;
+    position: absolute;
+    left: 90%;
+    top: 35%;
+}
+.new-padding1{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    cursor: pointer;
+}
+.new-padding1:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding2{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    top: 14%;
+    cursor: pointer;
+}
+.new-padding2:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding3{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    top: 28%;
+    cursor: pointer;
+}
+.new-padding3:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding4{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    top: 42%;
+    cursor: pointer;
+}
+.new-padding4:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding5{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    top: 56%;
+    cursor: pointer;
+}
+.new-padding5:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding6{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    top: 70%;
+    cursor: pointer;
+}
+.new-padding6:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding7{
+    position: absolute;
+    width: 75%;
+    height: 82px;
+    background-color: #202d39;
+    top: 84%;
+    cursor: pointer;
+}
+.new-padding7:hover{
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+.new-padding-right{
+    position: absolute;
+    left: 76%;
+    width: 34%;
+    height: 97.5%;
+    background: -webkit-linear-gradient(left, #95bbd4 5%, #859bac 95%);
+    background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
+}
+
+.right-text{
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    font-size: 22px;
+    font-weight: 100;
+    color: #375162; 
+    max-height: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.intravanous2-padding{
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    background-color: rgba(38, 54, 69, 0.6);
+    border-radius: 2px;
+}
+.review-text{
+    color: #c6d4df;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-size: 13px;
+    font-weight: 100;
+    max-height: 13px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.review-text1{
+    color: #4f94bc;
+    position: absolute;
+    left: 5%;
+    top: 55%;
+    font-size: 12px;
+    font-weight: 100; 
+    max-height: 12px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.right-button{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    max-height: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.right-btn{
+    cursor: pointer;
+}
+
+.right-btn:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.right-button>button{
+    font-size: 10.5px;
+    padding: 4px;
+    color: white;
+    background-color: rgba(38, 54, 69, 0.6);
+    border: none;
+    border-radius: 2px;
+}
+.screenshoot-image{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.last-text{
+    position: absolute;
+    left: 20%;
+    top: 340%;
+    color: white;
+}
+.update-padding{
+    position: absolute;
+    left: 20%;
+    top: 345%;
+    width: 61%;
+max-height: 500px;
+    background-color:none;
+}
+
+.update-main-image{
+    max-width: 40%;
+}
+
+.last-image{
+    position: absolute;
+    top: 0%;
+    left: 41%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    
+}
+.last-btn1{
+    width: 32.5%;
+    height: 40px;
+    position: absolute;
+    top: 100%;
+    background: -webkit-linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    color: #BEEE11;
+    border: none;
+    cursor: pointer;
+   
+}
+.last-btn2{
+    width: 32.5%;
+    height: 40px;
+    position: absolute;
+    top: 100%;
+    left: 33.5%;
+    background: -webkit-linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    color: #BEEE11;
+    border: none;
+    cursor: pointer;
+}
+.last-btn3{
+    width: 32.5%;
+    height: 40px;
+    position: absolute;
+    top: 100%;
+    left: 67%;
+    background: -webkit-linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    color: #BEEE11;
+    border: none;
+    cursor: pointer;
+   
+}
+.last-btn1:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.last-btn2:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.last-btn3:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.last-image1{
+    position:absolute;
+    margin-top: -25%;
+    left: 41%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.update-button{
+    width: 100%;
+    height: 70px;
+    background: -webkit-linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
+    color: #BEEE11;
+    border: none;
+    margin-top: -2%;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  .update-button:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .last-info{
+    position: absolute;
+    top: 420%;
+    background-color: #000;
+    width: 100%;
+    height: 300px;
+
+  }
+.about-text{
+    color: white;
+    font-size:15px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+}
+.about-text-button{
+    width: 15%;
+    background-color: #06BFFF;
+    height: 45px;
+    display: flex;
+    left: 40%;
+    border-radius: 5px;
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.about-text-button:hover{
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.last-logo{
+    position: relative;
+    left: 45%;
+    top: 25%;
+}
+
+@media screen and (max-width: 500px) {
+    .game-image2{
+        display: none;
+    }
+    .game-name{
+        display: none;
+    }
+
+    .price{
+       display: none;
+    }
+   
+  .login-padding{
+    position: absolute;
+    margin-top: -40%;
+    left: 1%;
+    width: 98%;
+  }
+
+  .category{
+    position: absolute;
+    left: 1%;
+    margin-top: -40%;
+
+  }
+
+  .category-image{
+    position: absolute;
+    left: 1%;
+    width: 98%;
+    margin-top: -40%;
+  }
+  .container{
+    margin-top: -10%;
+  }
+  .banner-section{
+   max-width: 80%;
+   
+  }
+  
+  .browse-btn{
+    width: 98%;
+    position: absolute;
+    left: 1%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: -34%;
+ 
+   
+  }
+
+
+#b-text{
+    position: absolute;
+    margin-top: -40%;
+    margin-left: -19%;
+}
+.price-tag{
+   display: none;
+}
+
+.btn{
+    position: absolute;
+    left: 43%;
+    margin-top: 2%;
+}
+
+.new-padding{
+    position: absolute;
+    left: 1%;
+    width: 99%;
+    gap: 1%;
+    max-height: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.new-padding-text{
+    font-size: 15px;
+}
+
+.new-padding-main{
+    position: absolute;
+    left: 1%;
+    width: 90%;
+    margin-top: -2%;
+}
+.discount{
+    margin-left: -8%;
+    width: 13.5%;
+}
+.discount_final_price{
+    margin-left: -5%;
+}
+.new-padding-main1{
+    margin-top: -65%;
+}
+.last-image1{
+top: 100%;
+}
+.last-text{
+    position: absolute;
+    left: 1%;
+    margin-top: -85%;
+}
+
+.update-padding{
+    position: absolute;
+    left: 1%;
+    width: 100%;
+    margin-top: -82%;
+
+}
+.about-text-button{
+    width: 35%;
+    font-size: 100%;
+}
+.last-logo{
+    position: relative;
+    left: 50%;
+    width: 10%;
+}
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .game-image{
+        display: none;
+    }
+   
+
+    .game-name{
+        margin-left: 5%;
+    }
+
+    .price{
+        display: none;
+    }
+    .last-image1{
+        margin-top: -29%;
+    }
+   
+}
+
+@media screen and (max-width: 1100px) {
+
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        transition: all 1s ease-out;
+       }
+    
+       .nav-list{
+        flex-direction: column;
+        align-items: center;
+      
+       
+       }
+       .search{
+        width: 100%;
+       }
+
+ .left{
+    display: none;
+ }
+ .container{
+    position: absolute;
+    left: 2%;
+    width: 95%;
+    
+ }
+ .top{
+    position: absolute;
+    left: 0%;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-left: -18%;
+ }
+ 
+
+.burger{
+    display:block ;
+  }
+  
+  .h-nav{
+    height: 50px;
+  }
+  .v-nav{
+    opacity: 0;
+  }
+
+  .padding{
+    position: absolute;
+    top: 250px;
+  }
+}
+
+@media screen and(max-width:1000px){
+   
+}
+
+
+@media screen and (max-width:1500px){
+    .padding{
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        position: absolute;
+        left: 0.1%;
+        height: 300px;
+      margin-top: 4.5%; 
+     width: 35%;
+      background: none;
+   border-radius: 0;
+   background: transparent;
+   border: none;
+   box-shadow: none;
+
+           }
+           .btn1{
+           width: 100%;
+           height: 50px;
+            border-radius: none;
+            text-align: start;
+            position: relative;
+            left: 1%;
+           font-weight: 900;
+          
+           }
+           .btn1:hover{
+            color: #BEEE11;
+            background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+           }
+           .btn2:hover{
+            color: #BEEE11;
+            background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+           }
+           .btn2{
+            width: 100%;
+            border-radius: none;
+            text-align: start;
+            position: relative;
+            left: 1%;
+           font-weight: 900;
+           height: 50px;
+
+           }
+           .input{
+            position: relative;
+            left: 1%;
+            width: 95%;
+            height: 50px;
+
+
+           }
+           .search-btn{
+            position: relative;
+            width: 10%;
+           left: 90%;
+           top: -10.8%;
+           height: 53px;
+
+           }
+          .game-image{
+              overflow-x: hidden;
+          }
+          .game-image2{
+              overflow-x: hidden;
+          }
+          .price{
+              position: relative;
+              margin-left: 10%;
+          }
+         
+}
+
+/* Second page */
+
+.second-page{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 460px;
+    color: #b13737;
+    background: black;
+    display: block;
+    
+}
